@@ -1,0 +1,27 @@
+#Apples for apples
+
+#variables
+john =3
+mary =5
+adam =6
+
+#Print apples on same line, seperated by a comma
+
+#To print name and number, the integers must be cast into str
+
+print("john "+ str(john), "Mary " + str(mary), "Adam " + str(adam), sep=", ")
+
+
+#Create variable called total_apple
+
+total_apples = (john + mary + adam) 
+
+#To print "total apples" and  total number int, the integer must be cast into str
+
+print ("total apples " + str(total_apples), sep =" ")
+
+#To calculate mean average number, add all 3 vaules and divide by 3
+
+mean_number_of_apples= (john + mary + adam / 3)
+
+print ("mean average " + str(mean_number_of_apples))
