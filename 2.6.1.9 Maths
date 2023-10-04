@@ -1,0 +1,32 @@
+#evaluate the results of four basic arithmetic
+
+#Variable values
+
+x = float (8)
+y = float (4)
+print()
+#arithmatic
+
+print()
+addition = (x+y)
+subtraction = (x-y)
+multiplication = (x*y)
+division = (x/y)
+print()
+
+#print evaluations
+
+print("x= ",x)
+print("y= ",y)
+print()
+
+print("Addition", addition)
+
+print("Subtraction", subtraction)
+
+print("Multiplcation", multiplication)
+
+print("Division", division)
+
+print("\nIm a snake, slivering little snake SSSSS")
+print()
