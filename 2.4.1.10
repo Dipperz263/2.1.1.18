@@ -1,0 +1,6 @@
+#Enter code in python
+#break down equation into simple form using brackets. Python does the BODMAS
+
+x = float(0)
+y = (3*x**3)-(2*x**2)+(3*x-1)
+print("y =", y)
