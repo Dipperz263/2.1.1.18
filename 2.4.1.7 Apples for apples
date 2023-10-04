@@ -22,6 +22,6 @@ print ("total apples " + str(total_apples), sep =" ")
 
 #To calculate mean average number, add all 3 vaules and divide by 3
 
-mean_number_of_apples= (john + mary + adam / 3)
+mean_number_of_apples= ((john + mary + adam)/3)
 
 print ("mean average " + str(mean_number_of_apples))
