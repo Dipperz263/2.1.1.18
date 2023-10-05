@@ -1,0 +1,12 @@
+#EX 2.6.1.1
+
+
+hour= int(input("start time (hours): "))
+mins= int(input("start time (minutes): "))
+dura= int(input("event duration (minutes): "))
+
+minutes = (mins + dura) % 60 #calculates the remaining mins
+hours_24 = int(hour + (mins+dura) /60) %24 #calculates the remaining hours from 24hr clock
+
+
+print("end time", hours_24, ":", minutes)
