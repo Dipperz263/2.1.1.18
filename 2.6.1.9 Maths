@@ -4,7 +4,7 @@ print("BASIC ARITHMITIC")
 print()
 #Variable values
 
-x = float (input("First number? "))
+x = float (input("First number? "))  #the values is returned as a string so must be cast to float
 y = float (input ("Second number? "))
 print()
 
@@ -21,7 +21,7 @@ print()
 
 print()
 
-print("Addition", addition)
+print("Addition", addition)  #Consists of 2 varibles, string and float
 
 print("Subtraction", subtraction)
 
