@@ -1,13 +1,14 @@
 #evaluate the results of four basic arithmetic
 
-print("Basic arithmetic")
-
+print("BASIC ARITHMITIC")
+print()
 #Variable values
 
-x = float (8)
-y = float (4)
+x = float (input("First number? "))
+y = float (input ("Second number? "))
 print()
-#arithmatic
+
+#sums
 
 print()
 addition = (x+y)
@@ -18,15 +19,13 @@ print()
 
 #print evaluations
 
-print("x= ",x)
-print("y= ",y)
 print()
 
 print("Addition", addition)
 
 print("Subtraction", subtraction)
 
-print("Multiplcation", multiplication)
+print("Multiplication", multiplication)
 
 print("Division", division)
 
