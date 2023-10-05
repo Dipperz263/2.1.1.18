@@ -1,0 +1,27 @@
+#EX 3.1.11
+print()
+
+#Create input
+
+income = float(input("Whats your income? "))
+
+#Define surplus
+
+surplus = float(income) - 85528
+
+
+
+if float(income) <= 85528: # if income is less than or equal to
+        print(" Tax with releif", round((income * 0.18) - 556.2, 2)) 
+        
+    # calculate ta as a percentage, deduct the relief, round the vaule to 2 decimal places
+
+
+else: # if not
+    print ("Tax ", round(14839.2 + (float(surplus) * 0.32), 2)) 
+    
+    # calculate the 32 percent of the surplus and addd the fixed rate tax, round the vaule to 2 decimal places
+
+
+    
+
