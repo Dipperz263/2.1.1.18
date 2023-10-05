@@ -1,0 +1,22 @@
+#EX 3.1.10
+
+
+#create the variable
+
+plant=(input("plant name? "))
+
+#first if statement
+
+if plant == "SPATH":            
+    print("Spath is the best")
+
+#if first condition is not met, move down to next
+
+elif plant == "spath":
+    print("No, I want a bigger spath?")
+
+#if second condition is not met, move down to next
+
+
+else:
+    print("Spath! Not", plant)
