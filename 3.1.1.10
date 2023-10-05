@@ -15,7 +15,7 @@ if plant == "SPATH":
 elif plant == "spath":
     print("No, I want a bigger spath?")
 
-#if second condition is not met, move down to next
+#if second condition is not met, move down to else
 
 
 else:
