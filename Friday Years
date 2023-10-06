@@ -1,0 +1,16 @@
+year = int(input("enter a year"))
+
+
+if year < 1582:
+    print ("not within the georgian calender perriod")
+
+else:
+    if year % 4 != 0:
+    print ("leap year")
+
+    elif year % 100 != 0:
+    print ("common year")
+
+    else: year % 400 != 0
+    print ("common year")
+
