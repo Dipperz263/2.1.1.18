@@ -1,0 +1,44 @@
+#Scenario
+#Listen to this story: a boy and his father, a computer programmer, are playing with wooden blocks. They are building a pyramid.
+
+#Their pyramid is a bit weird, as it is actually a pyramid-shaped wall – it's flat. The pyramid is stacked according to one simple principle: each lower layer contains one block more than the layer above.
+
+#The figure illustrates the rule used by the builders:
+
+#your task is to write a program which reads the number of blocks the builders have, and outputs the height of the pyramid that can be built using these blocks.
+
+#Note: the height is measured by the number of fully completed layers – if the builders don't have a sufficient number of blocks and cannot complete the next layer, they finish their work immediately.
+
+#Test your code using the data we've provided.
+
+###########################################----------------------------###########################################
+
+
+#Key: DO NOT TRY TO SOLVE THE EQUATION, SIMPLY EVALUATE WHAT IS HAPPENING AND PYTHON WILL WORK OUT THE EQUATION.
+
+#input numberof blocks
+number_of_blocks= int(input("Number of blocks? ") )
+
+#blocks remaining variable
+blocks_remaining = number_of_blocks
+
+#blocks per line variable/ initialised as 1 (for first row)
+blocks_used_per_line =1
+
+height = 0
+
+while blocks_remaining > 0:
+    #height counter
+    height = height + 1
+
+    #this increases based on algorithm
+    blocks_used_per_line =blocks_used_per_line + 1
+
+    #this removes the total blocks used on the line
+    blocks_remaining -= blocks_used_per_line
+
+print (height)
+
+
+
+###########################################----------------------------###########################################
