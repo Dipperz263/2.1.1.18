@@ -1,0 +1,31 @@
+def is_year_leap(year):
+    
+
+        if year % 4 != 0:           
+            return False
+# If the year is ( % ) 4 and is not equal to ( != ) 0. print string (This means not divisable by 4)
+
+
+        elif year % 100 != 0: 
+            return True
+ # year is ( % ) 100 and not equal to ( != ) 0. print string (This means not divisable by 100)     
+
+        elif year % 400 != 0:
+            return False
+# year is ( % ) 400 and not equal to ( != ) 0. print string (This means not divisable by 400)
+
+        else:
+            return True
+
+
+test_data = [1900, 2000, 2016, 1987]
+test_results = [False, True, True, False]
+
+for i in range(len(test_data)):
+    yr = test_data[i]
+    print(yr,"->",end="")
+    result = is_year_leap(yr)
+    if result == test_results[i]:
+        print("OK")
+    else:
+        print("Failed")
