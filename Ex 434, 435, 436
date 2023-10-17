@@ -41,7 +41,7 @@ def is_year_leap(year): # creates the function
 def days_in_month(year, month):
     # Determine the number of days in a month
     days = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
-    res = days[month - 1]
+    res = days[month - 1] # As the range starts from zero, the chosen month is one behind
     
     # Adjust for February if it's a leap year
     if month == 2 and is_year_leap(year):
@@ -59,12 +59,12 @@ def days_in_month(year, month):
 def day_of_year(year, month, day):
     if year < 1 or month < 1 or month > 12 or day < 1:
         return None
-    days = 0
-    for m in range(1, month):
-        md = days_in_month(year, m)
-        if md == 0:
+    days = 0 # variable to keep track of days
+    for m in range(1, month): #for loop to iterate from first month to current 
+        days_so_far = days_in_month(year, m) # for each month its calculates the number of days in that month using "days in month function"
+        if days_so_far == 0:
             return None  # Invalid month
-        days += md
+        days += days_so_far # is the sum of days and days_so_far
     if day <= days_in_month(year, month):
         return days + day
     else:
