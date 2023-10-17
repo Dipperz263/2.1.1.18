@@ -1,0 +1,93 @@
+fltOne = 2.0
+fltTwo = 200.0
+fltThree = fltOne * fltTwo
+
+
+stringOne = ("The product of fltOne and fltTwo = ?")
+
+print (stringOne, fltThree)
+
+fltOne += 1
+
+fltFour = float(input("Please provide another number for fltFour? "))
+
+print("This is the output of fltThree and fltFour : ", fltThree + fltFour)
+
+
+####
+
+userword = input("Enter a greeting:")
+
+if userword == "Hello":
+    print("Good greeting")
+elif userword == "hello":
+    print("Good greeting, but capital letter?")
+else:
+    print("Not what i was expecting")
+
+
+listOfStrings = []
+
+listOfStrings.append("Hello")
+listOfStrings.append("Hi")
+listOfStrings.append("Salut")
+listOfStrings.append("Good Day")
+listOfStrings.append("Bon Dia")
+listOfStrings.append("Howdy")
+
+print("this is a list of strings: ", listOfStrings)
+
+newlist = []
+for word in listOfStrings:
+    length = len(word)
+    newlist.append(length)
+newlist.sort()    
+print(newlist[0])
+
+
+
+def calcForc (mass, acel =9.81):
+    force = mass * acel
+    return force
+    
+result = calcForc (500,2) 
+
+print (result)
+
+
+def caseChanger(input_string): #construct function
+    modified_string = '' # creates an empty string
+    for each_letter in input_string:
+        if each_letter == 'a':
+            modified_string += 'A'
+        else:
+            modified_string += each_letter
+    return modified_string
+
+
+
+print(caseChanger("Lazy"))
+
+
+
+#14 a) Create a list that represents a set of cars. The list should contain the following
+#cars: Focus,Up,Golf,Robin,Fiesta,Astra,Tiguan,Leaf (4 marks)
+
+cars = ["Focus", "Up", "Golf", "Robin", "Fiesta", "Astra", "Tiguan", "Leaf"]
+
+#14 part b) use a method to order the cars so that they are in alphabetical order (3 marks)
+#print this to the screen
+cars.sort()
+
+print(cars)
+
+#15) Populate a tuple that represents top speeds of the cars (4 marks)
+#These are the respective speeds for the alphabetically ordered car list
+# 120,100,125,126,78,40,105,93
+speedtup = (120, 100, 125, 126, 78, 40, 105, 93)
+
+#16) Dictionary question (9 marks)
+#create a dictionary which joins the cars with their corresponding speed. 
+#write a suitable print statement which prints all cars, with their speeds
+cars_speed= dict(zip(cars, speedtup))
+print(cars_speed)
